@@ -1,0 +1,28 @@
+### 1. Obtenir toutes les publications
+GET http://localhost:3000/api/posts
+
+### 2. Obtenir la publication 1
+GET http://localhost:3000/api/posts/1
+
+### 3. Créer une publication
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Mon nouveau post",
+  "body": "Ceci est le contenu de mon nouveau post créé via l'API"
+}
+
+### 4. Modifier la publication de test
+PUT http://localhost:3000/api/posts/101
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Post modifié",
+  "body": "Le contenu a été mis à jour"
+}
+
+### 5. Supprimer la publication de test
+DELETE http://localhost:3000/api/posts/101
